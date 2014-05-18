@@ -21,6 +21,7 @@ total=0
 for index in range(0,len(boolprimesupto2mil)):
     if boolprimesupto2mil[index]:
         total=total+index
-print total
+
+print total    # 142913828922
 
 
