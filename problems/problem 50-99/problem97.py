@@ -1,4 +1,4 @@
-# euler challenge
+# Project Euler
 # problem 97
 
 total=1

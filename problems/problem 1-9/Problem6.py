@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 6
 
 def sumof1to(n):
@@ -11,4 +11,3 @@ def sumofsq1to(n):
 print (sumof1to(100)*sumof1to(100))
 print sumofsq1to(100)
 print (sumof1to(100)*sumof1to(100))-sumofsq1to(100)
-

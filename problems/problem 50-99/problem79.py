@@ -6,7 +6,7 @@ with open('problem79keylog.txt','r') as myfile:
     mylist = list(set(mylist))
     mylist.sort()
     print mylist
-    
+
 output=mylist[0]
 for code in mylist:
     if code not in output:
@@ -19,4 +19,3 @@ for code in mylist:
             pos = output.find(test1)
             output = output[:pos+1] + code[1] + output[pos+1:]
         print code, output
-

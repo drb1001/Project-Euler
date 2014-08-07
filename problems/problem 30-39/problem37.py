@@ -20,7 +20,7 @@ mycount=0
 mysum=0
 for n in range(10,1000000):
     if boolprimesupto1mil[n]==False:
-        continue   
+        continue
     sn=str(n)
     l=len(sn)
     for i in range(1,l):

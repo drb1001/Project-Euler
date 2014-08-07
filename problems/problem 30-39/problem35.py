@@ -26,7 +26,7 @@ for n in range(1,1000000):
         mycount+=1
         print n,l
     if l>1:
-        for i in range(1,l):  
+        for i in range(1,l):
             newn=int(sn[l-i:]+sn[:l-i])
             if str(newn)[l-1] in [0,2,4,5,6,8]:
                 break

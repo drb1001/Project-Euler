@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 17
 
 def lettercount(n):
@@ -9,7 +9,7 @@ def lettercount(n):
         if n in range(10,20):
             return teensdict[n]
         else:
-            return tensdict[int(s[0])]+lettercount(int(s[1:])) 
+            return tensdict[int(s[0])]+lettercount(int(s[1:]))
     if len(s)==3:
         return lettercount(int(s[0]))+10+lettercount(int(s[1:]))
     if len(s)==4:
@@ -17,7 +17,7 @@ def lettercount(n):
 
 # watch for 'and' with eg 200
 
-        
+
 unitsdict = {
     0:0,
     1:3,
@@ -62,4 +62,4 @@ runningcount=0
 for n in range(1,1001):
     runningcount+=lettercount(n)
 
-print runningcount    
+print runningcount

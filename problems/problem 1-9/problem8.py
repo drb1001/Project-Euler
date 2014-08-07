@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 8
 
 mystring="73167176531330624919225119674426574742355349194934" \
@@ -32,4 +32,3 @@ for i in range(0,995):
         greatest=total
 
 print greatest
-

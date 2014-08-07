@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 15
 
 from math import factorial

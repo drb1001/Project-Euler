@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 3
 
 import math
@@ -20,4 +20,3 @@ def primesupto(n):
 
 
 #print primesupto(sroot)[-1]
-    

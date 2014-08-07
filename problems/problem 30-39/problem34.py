@@ -21,8 +21,7 @@ for test in range(10,3000000):
     if test==total:
         print test, total
         runningsum=runningsum+i
-        
+
 
 print "-----------"
 print runningsum
-

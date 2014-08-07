@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 19
 
 def dayfromdate(d,m,yyyy):
@@ -13,7 +13,7 @@ def dayfromdate(d,m,yyyy):
         isleapyear=1
     else:
         isleapyear=0
-    
+
     dayscount = yeardays + leapyears + monthcount + isleapyear + d
 
     dayscount = dayscount%7
@@ -50,7 +50,7 @@ weekdaydict = {
 
 
 print dayfromdate(19,2,1989)
-print dayfromdate(2,8,1985)    
+print dayfromdate(2,8,1985)
 
 count=0
 for year in range(1901,2001):

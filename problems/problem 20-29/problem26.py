@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 26
 
 def shortendec(n):

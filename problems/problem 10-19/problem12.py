@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 12
 
 from math import sqrt

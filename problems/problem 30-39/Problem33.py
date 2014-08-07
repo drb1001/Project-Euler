@@ -38,4 +38,4 @@ for frac in myfracts:
     totalnum=totalnum*frac[0]
     totalden=totalden*frac[1]
 
-print totalnum, totalden 
+print totalnum, totalden

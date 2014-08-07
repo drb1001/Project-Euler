@@ -9,7 +9,7 @@ def power10(a,b):
         output=output*a
         if len(str(output))>12:
             output=int(str(output)[-12:])
-            
+
     return output
 
 total=0
@@ -19,4 +19,3 @@ for i in range(1,1001):
     print i, p, total
 
 print total
-

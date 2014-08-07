@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 23
 
 def sumofprdiv(n):
@@ -10,7 +10,7 @@ def sumofprdiv(n):
             output=output+i
     return output
 
-    
+
 perfectnum=[]
 abundnum=[]
 for n in range(1,25000):
@@ -21,8 +21,8 @@ for n in range(1,25000):
         perfectnum.append(n)
     elif n<dn:
         abundnum.append(n)
-        
-print "---------"        
+
+print "---------"
 print len(abundnum)
 print "---------"
 
@@ -38,9 +38,6 @@ for test in range(1,25000):
         elif (test-abund) in abundnum:
             #print test,abund,test-abund
             break
-        
+
 print "---------"
 print runningtotal
-
-            
-

@@ -18,11 +18,9 @@ for a2p in range(0,2):
                         runningtotal = a2p*200 + a1p*100 + a50*50 + a20*20 + a10*10 + a5*5
                         for a2 in range(0, int((200-runningtotal)/2.0)+1 ):
                             runningtotal = a2p*200 + a1p*100 + a50*50 + a20*20 + a10*10 + a5*5 + a2*2
-                            for a1 in range(0, int(200-runningtotal)+1):                
+                            for a1 in range(0, int(200-runningtotal)+1):
                                 runningtotal = a2p*200 + a1p*100 + a50*50 + a20*20 + a10*10 + a5*5 + a2*2 + a1
                                 if runningtotal==200:
                                     runningcount+=1
 
 print runningcount
-                        
-                        

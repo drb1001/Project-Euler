@@ -41,5 +41,5 @@ for a in range(-1000,1001):
         if maxprimecount[2]<primecount:
             maxprimecount=[a,b,primecount]
             print maxprimecount
-            
+
 print maxprimecount, maxprimecount[0]*maxprimecount[1]

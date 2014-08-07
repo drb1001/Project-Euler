@@ -1,4 +1,4 @@
-# euler challenge
+# Project Euler
 # problem 22
 
 azdict = {
@@ -28,5 +28,3 @@ with open('problem22names.txt','r') as myfile:
         position+=1
 
 print runningtotal
-
-

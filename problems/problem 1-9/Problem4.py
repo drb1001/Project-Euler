@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 4
 
 import math
@@ -26,4 +26,3 @@ for i in range(999,100,-1):
                 largest=prod
                 factors=[i,j]
 print "Largest = " + str(largest) + " , " + str(factors)
-            

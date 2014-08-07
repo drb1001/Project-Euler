@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 25
 
 a=1
@@ -12,12 +12,10 @@ while True:
         print a
         print count
         break
-    
+
     b=b+a
     count=count+1
     if len(str(b))>=1000:
         print b
         print count
         break
-
-

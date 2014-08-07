@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 10
 
 from math import sqrt
@@ -22,5 +22,3 @@ for index in range(0,len(boolprimesupto2mil)):
     if boolprimesupto2mil[index]:
         total=total+index
 print total
-
-

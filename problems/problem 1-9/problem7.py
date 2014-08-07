@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 7
 
 def primesupto(n):

@@ -24,4 +24,3 @@ for number in mylist:
         print mynumber
         break
     if counter%10000==0: print counter
-

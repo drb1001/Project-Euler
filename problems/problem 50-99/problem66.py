@@ -22,7 +22,7 @@ def minx(D,limit):
         if y>limit:
             candidates.append(D)
             return -1
-        x = sqrt(1 + D * y*y) 
+        x = sqrt(1 + D * y*y)
         if x%1==0:
             return int(x)
         y+=1
@@ -45,6 +45,6 @@ for limit in (10**4,10**5,10**6,10**7,10**8,10**9,10**11,10**12,10**13):
 
     oldcandidates=candidates
     candidates=[]
-    
+
 
 print "Time: " + str(clock()-start)

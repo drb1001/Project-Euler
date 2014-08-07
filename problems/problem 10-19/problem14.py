@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 14
 
 def myfunc(n):

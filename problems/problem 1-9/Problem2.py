@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 2
 
 fibs=[0,1]
@@ -14,4 +14,3 @@ while True:
             total+=next
 
 print total
-    

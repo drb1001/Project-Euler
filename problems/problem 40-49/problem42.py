@@ -1,5 +1,5 @@
 # Project Euler
-# problem 24
+# problem 42
 
 
 letterdict = {

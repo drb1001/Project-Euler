@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 29
 
 output=[]
@@ -9,4 +9,3 @@ for a in range(2,101):
             output.append(c)
 
 print len(output)
-        

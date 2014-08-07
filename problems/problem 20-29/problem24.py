@@ -8,7 +8,7 @@ numberlist = ['0','1','2','3','4','5','6','7','8','9']
 for a in numberlist:
     mystr = a
     numberlist.remove(a)
-    
+
     for b in numberlist:
         mystr = mystr+b
         print mystr
@@ -17,7 +17,7 @@ for a in numberlist:
         for c in numberlist:
             mystr = mystr+c
             numberlist.remove(c)
-            
+
             for d in numberlist:
                 mystr = mystr+d
                 numberlist.remove(d)
@@ -41,10 +41,10 @@ for a in numberlist:
                                 for i in numberlist:
                                     mystr = mystr+i
                                     numberlist.remove(i)
-                                    
+
                                     for j in numberlist:
                                         mystr = mystr+j
-                                        
+
                                         counter = counter + 1
                                         #if counter==2000000:
                                         print counter, mystr
@@ -54,28 +54,27 @@ for a in numberlist:
                                     numberlist.insert(-1,i)
                                     mystr=mystr[0:-1]
                                     print "\t", i, counter, mystr, numberlist
-                                    
+
                                 numberlist.insert(-1,h)
                                 mystr=mystr[0:-1]
                                 print "\t", "\t", i, counter, mystr, numberlist
-                                
+
                             numberlist.insert(-1,g)
                             mystr=mystr[0:-1]
-                            
+
                         numberlist.insert(-1,f)
                         mystr=mystr[0:-1]
-                        
+
                     numberlist.insert(-1,e)
                     mystr=mystr[0:-1]
-                    
+
                 numberlist.insert(-1,d)
                 mystr=mystr[0:-1]
-                
+
             numberlist.insert(-1,c)
             mystr=mystr[0:-1]
-            
+
         numberlist.insert(-1,b)
         mystr=mystr[0:-1]
-        
-    numberlist.insert(-1,a)
 
+    numberlist.insert(-1,a)

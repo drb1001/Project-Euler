@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 11
 
 inputm=[]

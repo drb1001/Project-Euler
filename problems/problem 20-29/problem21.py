@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 21
 
 def sumofprdiv(n):
@@ -10,7 +10,7 @@ def sumofprdiv(n):
             output=output+i
     return output
 
-    
+
 
 total=0
 done=[]
@@ -24,7 +24,6 @@ for n in range(1,10000):
         print n, dn, ddn, total
     done.append(n)
     done.append(dn)
-    
-        
-print total
 
+
+print total

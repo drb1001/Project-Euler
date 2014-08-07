@@ -14,8 +14,7 @@ for i in range(10,1000000):
     if i==total:
         print i, total
         runningsum=runningsum+i
-        
+
 
 print "-----------"
 print runningsum
-

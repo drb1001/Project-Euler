@@ -13,4 +13,3 @@ for i in strtotal:
     sumtotal=sumtotal+int(i)
 
 print sumtotal
-    

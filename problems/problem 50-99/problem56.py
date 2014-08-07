@@ -14,5 +14,3 @@ for a in range(2,101):
             maxsum=(a,b,absum)
 
 print maxsum
-            
-            

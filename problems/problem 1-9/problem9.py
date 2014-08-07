@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 9
 
 
@@ -21,7 +21,7 @@ def sqnumsunder(n):
 
 sqnumsunder1000000=sqnumsunder(1000000)
 print sqnumsunder1000000
-    
+
 for asq in sqnumsunder1000000:
     for bsq in sqnumsunder1000000:
         for csq in sqnumsunder1000000:
@@ -32,4 +32,3 @@ for asq in sqnumsunder1000000:
 ##                if asq + bsq == csq:
                 print a,b,c
 ##                    print sqrt(asq)*sqrt(bsq)*sqrt(csq)
-

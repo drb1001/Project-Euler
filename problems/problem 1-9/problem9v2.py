@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # Problem 9
 
 
@@ -19,4 +19,3 @@ for b in range(0,1000):
         print int(a),int(b),int(c)
         print int(b*b+a*a), int(c*c)
         print "---"
-

@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 11
 
 a=[37107287533902102798797998220837590246510135740250,
@@ -106,7 +106,6 @@ a=[37107287533902102798797998220837590246510135740250,
 mysum=0
 for number in a:
     mysum=mysum+number
-    
+
 print mysum
 print str(mysum)[0:10]
-

@@ -1,4 +1,4 @@
-# Euler challenge
+# Project Euler
 # problem 23
 
 from math import sqrt
@@ -34,7 +34,7 @@ def sumofpropdiv(n):
 
 # 0=perf, 1=abund, -1=def
 binabundnum = [ 0 for i in range(0,30000) ]
-                
+
 for n in range(1,30000):
     if n%1000==0:
         print n
@@ -45,7 +45,7 @@ for n in range(1,30000):
         binabundnum[n]=1
     else:
         binabundnum[n]=-1
-        
+
 print "---------"
 print binabundnum[:20]
 print "---------"
@@ -72,9 +72,6 @@ for test in range(1,30000):
         elif binabundnum[(test-abund)]==1:
             #print test, abund, test-abund
             break
-        
+
 print "---------"
 print runningtotal
-
-            
-

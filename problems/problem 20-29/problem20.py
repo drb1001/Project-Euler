@@ -16,5 +16,3 @@ for i in strf100:
     sumtotal=sumtotal+int(i)
 
 print sumtotal
-    
-    
