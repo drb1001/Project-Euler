@@ -22,6 +22,8 @@ print output
 
 
 
+
+
 def reccurcyc(d):
 
      #for loop - try 9, else try 9*10 + 9 else *10 +9 ...
