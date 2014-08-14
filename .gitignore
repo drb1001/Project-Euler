@@ -2,3 +2,6 @@
 
 ## Directory-based project format
 .idea/
+
+## Python combiled files
+*.pyc
