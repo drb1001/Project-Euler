@@ -31,6 +31,6 @@ for b in range(1, 500):
     b = float(b)
     a = 1000 * ((500 - b)/(1000 - b))
     c = 1000 - a - b
-    if (a > 0 and a % 1 == 0) and (c > 0 and c % 1 == 0) and (a >= b >= c):
+    if (a > 0 and a % 1 == 0) and (c > 0 and c % 1 == 0) and (a <= b <= c):
         print int(a), int(b), int(c)
         print int(a * b * c)

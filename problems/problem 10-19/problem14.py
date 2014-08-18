@@ -20,26 +20,28 @@
 # Problem 14
 
 
-def myfunc(n):
-    if n%2==0:
-        return n/2
+def HOTPO(n):
+    if n % 2 == 0:
+        return n / 2
     else:
-        return 3*n+1
+        return (3 * n) + 1
 
 def seqlen(n):
-    if n<=0:
+    if n <= 0:
         return 0
-    counter=1
-    while n!=1:
-        n=myfunc(n)
-        counter+=1
+    counter = 1
+    while n != 1:
+        n = HOTPO(n)
+        counter += 1
     return counter
 
-maxchain=0
-for n in range(0,1000000):
-    newlen=seqlen(n)
+maxchain = 0
+maxn = 0
+for n in range(0, 1000000):
+    newlen = seqlen(n)
     if maxchain < newlen:
         maxchain = newlen
+        maxn = n
         print n, maxchain
 
-print maxchain
+print n

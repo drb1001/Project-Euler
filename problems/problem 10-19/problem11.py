@@ -69,4 +69,5 @@ for i in range(3,20):
            maxmulti = check
            coord = [i,j]
 
-print maxmulti, coord
+print coord
+print maxmulti

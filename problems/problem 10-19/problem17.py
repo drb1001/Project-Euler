@@ -14,21 +14,28 @@
 # Project Euler
 # problem 17
 
+
 def lettercount(n):
-    s=str(n)
-    if len(s)==1:
+    s = str(n)
+    if len(s) == 1:
         return unitsdict[n]
-    if len(s)==2:
+    if len(s) == 2:
         if n in range(10,20):
             return teensdict[n]
         else:
-            return tensdict[int(s[0])]+lettercount(int(s[1:]))
-    if len(s)==3:
-        return lettercount(int(s[0]))+10+lettercount(int(s[1:]))
-    if len(s)==4:
-        return lettercount(int(s[0]))+11+lettercount(int(s[1:]))
-
-# watch for 'and' with eg 200
+            return tensdict[int(s[0])] + lettercount(int(s[1:]))
+    if len(s) == 3:
+        if s[1:] == "00":
+            return lettercount(int(s[0])) + 7
+        else:
+            return lettercount(int(s[0])) + 10 + lettercount(int(s[1:]))
+    if len(s) == 4:
+        if s[1:] == "000":
+            return lettercount(int(s[0])) + 8
+        elif s[1] == "0":
+            return lettercount(int(s[0])) + 3 + lettercount(int(s[2:]))
+        else:
+            return lettercount(int(s[0])) + 8 + lettercount(int(s[1:]))
 
 
 unitsdict = {
@@ -71,8 +78,8 @@ tensdict = {
     }
 
 
-runningcount=0
+runningcount = 0
 for n in range(1,1001):
-    runningcount+=lettercount(n)
+    runningcount += lettercount(n)
 
 print runningcount

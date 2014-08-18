@@ -32,17 +32,17 @@ def primefactors(n):
 # return array of array of prime factors
 # repeated prime factors will be in array once, with associated count
 def primefactorsarray(n):
-
     factorslist = primefactors(n)
-
-    factors = [[factorslist[0],0]]
-    for new in primefactors(n):
+    factors = [[factorslist[0], 0]]
+    for new in factorslist:
+        found = False
         for f in factors:
-            if f[0] == new: f[1] = f[1] + 1
-            else:
-                factors.append([new, 1])
+            if f[0] == new:
+                f[1] = f[1] + 1
+                found = True
                 break
-
+        if found == False:
+            factors.append([new, 1])
     return factors
 
 
@@ -55,3 +55,6 @@ def primefactorsarray(n):
 #
 # print primefactors(5)
 # print primefactorsarray(5)
+#
+# print primefactors(29160)
+# print primefactorsarray(29160)

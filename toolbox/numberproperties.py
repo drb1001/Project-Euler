@@ -10,3 +10,12 @@ def ispal(n):
     elif l == 2 and s[0] == s[-1]:  return True
     elif s[0] == s[-1]:  return ispal(s[1:-1])
     else:  return False
+
+
+# sum of individual digits
+def sumdigits(n):
+    nstr = str(n)
+    sumtotal = 0
+    for i in nstr:
+        sumtotal = sumtotal + int(i)
+    return sumtotal
