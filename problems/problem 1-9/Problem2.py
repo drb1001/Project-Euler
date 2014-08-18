@@ -16,6 +16,7 @@
 # Project Euler
 # Problem 2
 
+
 fibs = [0,1]
 total = 0
 

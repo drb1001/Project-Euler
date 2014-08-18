@@ -16,7 +16,9 @@
 # Problem 3
 
 
-import math
-from toolbox import primenumbers
+from toolbox import primefactorisation
 
-print primenumbers.listprimesupto(int(math.sqrt(600851475143)))[-1]
+output = primefactorisation.primefactors(600851475143)
+
+print output
+print max(output)
