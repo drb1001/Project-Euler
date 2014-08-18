@@ -13,27 +13,16 @@
 # Problem 4
 
 
-def ispal(n):
-    s = str(n)
-    l = len(s)
-    if l == 1 or l == 0:
-        return True
-    elif l == 2 and s[0] == s[-1]:
-        return True
-    elif s[0] == s[-1]:
-        return ispal(s[1:-1])
-    else:
-        return False
-
+from toolbox import numberproperties
 
 output = 0
 fact = [0,0]
 for i in range(999,100,-1):
     for j in range(i,100,-1):
-        prod = i * j
-        if ispal(prod):
-            if output < prod:
-                output = prod
+        product = i * j
+        if numberproperties.ispal(product):
+            if output < product:
+                output = product
                 factors = [i,j]
 
 print factors

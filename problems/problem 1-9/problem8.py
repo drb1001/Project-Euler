@@ -34,7 +34,7 @@
 # Project Euler
 # Problem 8
 
-mystring="73167176531330624919225119674426574742355349194934" \
+mystring = "73167176531330624919225119674426574742355349194934" \
 "96983520312774506326239578318016984801869478851843" \
 "85861560789112949495459501737958331952853208805511" \
 "12540698747158523863050715693290963295227443043557" \
@@ -55,13 +55,14 @@ mystring="73167176531330624919225119674426574742355349194934" \
 "05886116467109405077541002256983155200055935729725" \
 "71636269561882670428252483600823257530420752963450" \
 
-greatest=0
-for i in range(0,995):
-    total=1
-    for j in range(0,5):
-        total=total*int(mystring[i+j])
-    print i,total
-    if total>greatest:
-        greatest=total
+greatest = 0
+myrange = 13
+
+for i in range(0, len(mystring) - myrange):
+    total = 1
+    for j in range(0, myrange):
+        total = total * int(mystring[i+j])
+    if total > greatest:
+        greatest = total
 
 print greatest

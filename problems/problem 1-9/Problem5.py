@@ -25,7 +25,7 @@ for i in range(2,21):
             o = output[x]
             if o[0] == n[0]:
                 exists = 1
-                if o[1] < n[1]: output[x] = n  # changing temp variable o, not output??  need to replace o in output with n
+                if o[1] < n[1]: output[x] = n
         if exists == 0: output.append(n)
 
 
