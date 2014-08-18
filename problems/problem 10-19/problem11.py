@@ -35,7 +35,8 @@
 # Project Euler
 # problem 11
 
-inputm=[]
+
+inputm = []
 inputm.append([8,02,22,97,38,15,00,40,00,75,04,05,07,78,52,12,50,77,91,8])
 inputm.append([49,49,99,40,17,81,18,57,60,87,17,40,98,43,69,48,04,56,62,0])
 inputm.append([81,49,31,73,55,79,14,29,93,71,40,67,53,88,30,03,49,13,36,65])
@@ -57,14 +58,15 @@ inputm.append([20,69,36,41,72,30,23,88,34,62,99,69,82,67,59,85,74,04,36,16])
 inputm.append([20,73,35,29,78,31,90,01,74,31,49,71,48,86,81,16,23,57,05,54])
 inputm.append([01,70,54,71,83,51,54,69,16,92,33,48,61,43,52,01,89,19,67,48])
 
-maxmulti=0
-coord=[0,0]
-check=0
+
+maxmulti = 0
+coord = [0,0]
+check = 0
 for i in range(3,20):
     for j in range(0,17):
-       check=inputm[i][j]*inputm[i-1][j+1]*inputm[i-2][j+2]*inputm[i-3][j+3]
-       if check>maxmulti:
-           maxmulti=check
-           coord=[i,j]
+       check = inputm[i][j] * inputm[i-1][j+1] * inputm[i-2][j+2] * inputm[i-3][j+3]
+       if check > maxmulti:
+           maxmulti = check
+           coord = [i,j]
 
 print maxmulti, coord
