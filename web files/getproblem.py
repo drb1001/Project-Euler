@@ -17,7 +17,7 @@ sock.close()
 
 
 # extract and format text
-soup = BeautifulSoup(htmlSource)
+soup = BeautifulSoup(htmlSource, "html.parser")
 
 mytitle = soup.html.head.title.get_text()
 
@@ -32,8 +32,16 @@ myoutput = "\n###\n#  " + mytitle \
            + "\n#  " + mycontent \
            + "\n###\n\n"
 
-print myoutput
+# really crappy way to replace all unicode chars
+myoutput = myoutput.replace (u'\xd7', "x")   # replace unicode multiply sign
+myoutput = myoutput.replace (u'\u2212', "-")   # replace unicode minus sign
+myoutput = myoutput.replace (u'\u2260', "!=")   # replace unicode not equal sign
+myoutput = myoutput.replace (u'\xa0', " ")   # replace unicode no-break space
+myoutput = myoutput.replace (u'\xb2', "^2")   # replace unicode squared
+myoutput = myoutput.replace (u'\u2264', "<=")   # replace unicode less than equal to
 
+
+print myoutput
 
 # check if file exists
 filename = "problem" + var + ".py"
@@ -46,9 +54,14 @@ for root, dirs, files in os.walk(myrootdir):
 
 
 # if file exists add as comment
-print myfilepath
-with file(myfilepath, 'r') as original:
-    data = original.read()
-    with file(myfilepath, 'w') as modified: modified.write(myoutput + data)
+print "writing to:  " +  myfilepath
+with file(myfilepath, 'r+') as myfile:
+    old_data = myfile.read()
+    myfile.seek(0)
+    try:
+        myfile.write(myoutput + old_data)
+    except Exception as e:
+        print "Error in writing new data: " + str(e)
+        myfile.write(old_data)
 
 # if file does not exist - create file and add comment
